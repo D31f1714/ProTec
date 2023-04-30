@@ -9,7 +9,12 @@
 </head>
 <body>
     <header>
-        <h1>Iniciar sesión</h1>
+      <h1>ProTec - Inicio de sesion</h1>
+      <nav class="navbar">
+        <ul class="navbar_buttons">
+                  <li><a href="{{ route('home') }}">Home</a></li>
+        </ul>
+		</nav>
       </header>
       <main>
         <section>
