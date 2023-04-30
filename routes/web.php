@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\pageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -11,12 +12,13 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
+
+
+Route::get('/', [PageController::class, 'home'])-> name('home');
+
+Route::get('signin', [PageController::class, 'signin'])-> name('signin');
 */
-
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('signin', function () {
-    return view('signin');
+route::controller(PageController::class)->group(function(){
+    route::get('/', 'home')->name('home');
+    route::get('signin', 'signin')->name('signin');
 });

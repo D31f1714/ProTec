@@ -8,11 +8,11 @@
     <title>ProTec-Labs</title>
 </head>
 <body>
-    	<header>
+    <header>
 		<h1>ProTec</h1>
 		<nav class="navbar">
 			<ul class="navbar_buttons">
-                <li><a href="./ingreso.html">Ingresar</a></li>
+                <li><a href="{{ route('signin') }}">Ingresar</a></li>
 			</ul>
 		</nav>
 	</header>
