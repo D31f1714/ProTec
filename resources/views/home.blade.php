@@ -8,7 +8,7 @@
     <title>ProTec-Labs</title>
 </head>
 <body>
-    <header>
+    	<header>
 		<h1>ProTec</h1>
 		<nav class="navbar">
 			<ul class="navbar_buttons">
